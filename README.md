@@ -2,7 +2,8 @@
 A simple web app created for a senior project
 
 ## Demo
-![](WebApp/webapp demo.gif)
+![WebApp Demo gif](https://github.com/exuberantram/WebAppProject/blob/master/WebApp/webapp%20demo.gif)
+
 
 ## Requirements:
 * Responsive
