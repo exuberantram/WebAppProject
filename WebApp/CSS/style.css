@@ -1,0 +1,117 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Make content area fill the entire browser window */
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#hp section {
+    position: relative;
+}
+#hp-topbanner {
+    margin: auto ;
+    max-width: 100%;
+}
+/* inner black box */
+#hp-topbanner .module-inner {
+    background-color: #000;
+}
+/*grey border*/
+div{position: relative; }
+.module-sh {
+    margin-left: auto;
+    width: auto;
+    height: auto;
+    margin: 0 auto; /* same as sidebar */
+    background-color: #818181;
+    border: 1px #111;
+    padding: 20px;
+    }
+
+/* unvisited link*/
+.module-sh a:link{
+    color: aliceblue
+}
+
+/*visited link*/
+.module-sh a:visited{
+    color:lavender
+}
+
+/*change color on hover*/
+.module-sh a:hover{
+    color:skyblue
+}
+
+
+/* for small screens */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* sidebar menu */
+.sidenav{
+    height: 100%; /* remove if want "auto" height */
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111; /*black*/
+    overflow-x: hidden; /* disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home)
+.sidenav #myLinks {
+  display: none;
+} */
+
+/* menu links */
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+/* Style the hamburger menu
+.sidenav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+
+/* change color on hover */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+}

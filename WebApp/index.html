@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head> <!-- meta tags to make responsive-->
+    <meta charset="utf-8"> 
+    <title>WebApp V2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <!-- enables icons -->
+    <link rel="icon" href="chico C favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/chico%20C%20152.png">
+    <meta name="theme-color" content="white"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Chico's">
+    <meta name="msapplication-TitleImage" content="images/chico C 144.png">
+    <meta name="msapplication-Titlecolor" content="#FFFFFF">
+</head>
+
+<body class = "fullscreen">
+    <!-- side navigation! -->
+
+            <div class="sidenav">
+             <!--   <a href="#home" class="active">Edit Promos</a> -->
+            <a href = "#LogIn" class = "active">Log In</a>
+				<table>
+   <tr>
+       <form action="insert.php" method="POST">
+
+       
+           <td><font color="white">Username :</font></td>
+           <td><input type="text" name="username" required></td>
+
+   <tr>
+       <td><font color = "white">Password :</font></td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   <tr>
+       <td><font color = "white">Email :</font></td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+	<tr>
+        <td><font color = "white">Brand Select :</font></td>
+    <td><select name="brandSelect" required>
+      <option selected hidden value="">Choose a Brand</option>
+      <option value="Brand1">Brand1</option>
+      <option value="Brand2">Brand2</option>
+      <option value="Brand1Outlet">Brand1 Outlet</option>
+        <option value="Brand3">Brand3</option>
+     </select></td>
+   </tr>
+   <tr>
+       <td><font color = "white">Template Select :</font></td>
+    <td>
+     <select name="templateSelect" required>
+      <option selected hidden value="">Choose a Template</option>
+      <option value="Black & White">Black & White</option>
+      <option value="Black & Silver">Black & Silver</option>
+      <option value="Black & Grey">Black & Grey</option>
+     </select>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td> 
+    </tr>
+           </form>
+  </table> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </div>
+    <!-- end sidenav -->
+        
+    <!-- page content -->
+    <!-- test text box -->
+    <section class="module" id="hp-topbanner">
+        <div class="module-sh">
+            <div class="module-inner">
+                <div class = "module-copy" contenteditable="true">
+                    <h2><font color = "white">
+                        First title
+                        <br class = "visible-xs">
+                        subtext
+                        <br class = "visible-xs">
+                        subtext 2
+                        <br class="visible-xs">
+                        <a href="chicos.com" class="module-link-wrap" data-track="HP_TopBanner">Hyperlink</a>
+                        <br class = "visible-xs">
+                        Details
+                        </font>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end text box-->
+    
+        <!-- enables script -->
+        <script src="js/main.js"></script>
+
+</body>
+</html>
