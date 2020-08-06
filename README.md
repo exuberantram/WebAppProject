@@ -20,4 +20,6 @@ A simple web app created for a senior project
   * Partial code exists, commented out
   * Will likely need JQuery to expand functionality
 * Adding more boxes with editable text
-* Creating a database via PHP MySQL 
+* Creating a database via PHP MySQL (for PHP experience)
+* Creating and adding branding
+* Creating splash and navigation pages
